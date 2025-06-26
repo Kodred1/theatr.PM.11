@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace theatr.PM._11
+{
+    public partial class admin: Form
+    {
+        public admin()
+        {
+            InitializeComponent();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            user user = new user();
+            user.Show();
+            this.Close();
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            report report = new report();
+            report.Show();
+            this.Close();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+    }
+}
